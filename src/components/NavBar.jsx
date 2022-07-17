@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
-import {FaBars, FaTimes, FaLinkedin, FaGithub} from 'react-icons/fa'
+import {FaBars, FaTimes, FaLinkedin, FaGithub, FaEnvelope} from 'react-icons/fa'
+import {BsFillPersonLinesFill} from 'react-icons/bs'
 
 const NavBar = () => {
   const [nav, setNav] = useState(false)
@@ -35,13 +36,27 @@ const NavBar = () => {
       </ul>
 
       {/* Social icons */}
-      <div className='flex fixed flex-col top-[35%] left-0'>
-        <ul>
-          <li>
-            <FaLinkedin/>
-          </li>
-        </ul>
-
+      <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
+        <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] bg-blue-600 hover:ml-[-10px] duration-300'>
+          <a className='flex justify-between items-center w-full text-gray-300' href='https://www.linkedin.com/in/georgio-feghali/'>
+            LinkedIn <FaLinkedin size={30}/>
+          </a>
+        </li>
+        <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] bg-gray-700 hover:ml-[-10px] duration-300'>
+          <a className='flex justify-between items-center w-full text-gray-300' href='https://github.com/GeorgioFe'>
+            Github <FaGithub size={30}/>
+          </a>
+        </li>
+        <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] bg-pink-600 hover:ml-[-10px] duration-300'>
+          <a className='flex justify-between items-center w-full text-gray-300' href='mailto: giorgiofeghali2002@icloud.com'>
+            Email <FaEnvelope size={30}/>
+          </a>
+        </li>
+        <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] bg-orange-600 hover:ml-[-10px] duration-300'>
+          <a className='flex justify-between items-center w-full text-gray-300' href='../assets/Georgio Feghali - CV.pdf' target='_tab'>
+            Resume <BsFillPersonLinesFill size={30}/>
+          </a>
+        </li>
       </div>
 
     </div>
