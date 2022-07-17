@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {FaBars, FaTimes} from 'react-icons/fa'
+import {FaBars, FaTimes, FaLinkedin, FaGithub} from 'react-icons/fa'
 
 const NavBar = () => {
   const [nav, setNav] = useState(false)
@@ -25,7 +25,7 @@ const NavBar = () => {
         {!nav ? <FaBars/> : <FaTimes/>}
       </div>
 
-      {/* Mobile menu*/}
+      {/* Mobile menu */}
       <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>
         <li className='py-6 text-4xl'>Home</li>
         <li className='py-6 text-4xl'>About</li>
@@ -33,6 +33,16 @@ const NavBar = () => {
         <li className='py-6 text-4xl'>Work</li>
         <li className='py-6 text-4xl'>Contact Me</li>
       </ul>
+
+      {/* Social icons */}
+      <div className='flex fixed flex-col top-[35%] left-0'>
+        <ul>
+          <li>
+            <FaLinkedin/>
+          </li>
+        </ul>
+
+      </div>
 
     </div>
   )
