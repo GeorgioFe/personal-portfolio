@@ -7,7 +7,7 @@ const NavBar = () => {
 
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
-      <div className='text-3xl text-fuchsia-700 font-bold font-[Raleway] cursor-pointer'>
+      <div className='text-3xl text-pink-600 font-bold font-[Raleway] cursor-pointer'>
         &lt;GeorgioFe/&gt;
       </div>
 
